@@ -8,4 +8,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
+    fun sendMessage(view: android.view.View) {
+
+    }
+
+    fun onNumberClick(view: android.view.View) {}
+    fun onOperationClick(view: android.view.View) {}
 }
