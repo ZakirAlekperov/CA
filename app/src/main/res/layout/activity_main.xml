@@ -35,7 +35,9 @@
         android:inputType="phone"
         app:layout_constraintTop_toBottomOf="@+id/resultField"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
 
     <LinearLayout
         android:id="@+id/firstButtonPanel"
@@ -47,7 +49,7 @@
         app:layout_constraintRight_toRightOf="parent">
         <Button
             android:layout_weight="1"
-            android:layout_width="0dp"
+            android:layout_width="2dp"
             android:layout_height="wrap_content"
             android:text="7"
             android:onClick="onNumberClick"/>
@@ -56,7 +58,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="8"
-            android:onClick="onNumberClick"/>
+            android:onClick="onNumberClick"
+            tools:ignore="UsingOnClickInXml" />
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -161,7 +164,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="+"
-            android:onClick="onOperationClick"/>
+            android:onClick="onOperationClick"
+            tools:ignore="HardcodedText" />
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
