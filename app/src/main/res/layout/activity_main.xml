@@ -16,9 +16,12 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/resultField"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:textSize="35sp"
+                android:textAlignment="textEnd"
                 android:background="#d6e6ff">
             </TextView>
 
@@ -41,6 +44,7 @@
                     android:layout_weight="1"
                     android:text="@string/button_ac"
                     android:textSize="30dp"
+                    android:onClick="onClearClick"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
 
@@ -49,6 +53,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/button_sign"
+                    android:onClick="onOperationClick"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
 
@@ -57,6 +62,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/button_percent"
+                    android:onClick="onOperationClick"
                     android:textSize="35dp"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
@@ -66,6 +72,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/button_division"
+                    android:onClick="onOperationClick"
                     android:textSize="35dp"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
@@ -82,6 +89,7 @@
                     android:text="@string/button_7"
                     android:layout_weight="1"
                     android:textSize="35dp"
+                    android:onClick="onNumberClick"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
 
@@ -90,6 +98,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/button_8"
+                    android:onClick="onNumberClick"
                     android:textSize="35dp"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
@@ -98,8 +107,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="9"
+                    android:text="@string/button_9"
                     android:textSize="35dp"
+                    android:onClick="onNumberClick"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
 
@@ -108,6 +118,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/button_multiplication"
+                    android:onClick="onOperationClick"
                     android:textSize="35dp"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
@@ -124,6 +135,7 @@
                     android:text="@string/button_4"
                     android:layout_weight="1"
                     android:textSize="35dp"
+                    android:onClick="onNumberClick"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
 
@@ -133,6 +145,7 @@
                     android:layout_weight="1"
                     android:text="@string/button_5"
                     android:textSize="35dp"
+                    android:onClick="onNumberClick"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
 
@@ -142,6 +155,7 @@
                     android:layout_weight="1"
                     android:text="@string/button_6"
                     android:textSize="35dp"
+                    android:onClick="onNumberClick"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
 
@@ -150,6 +164,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/button_subtraction"
+                    android:onClick="onOperationClick"
                     android:textSize="35dp"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
@@ -166,6 +181,7 @@
                     android:text="@string/button_1"
                     android:layout_weight="1"
                     android:textSize="35dp"
+                    android:onClick="onNumberClick"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
 
@@ -175,6 +191,7 @@
                     android:layout_weight="1"
                     android:text="@string/button_2"
                     android:textSize="35dp"
+                    android:onClick="onNumberClick"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
 
@@ -184,6 +201,7 @@
                     android:layout_weight="1"
                     android:text="@string/button_3"
                     android:textSize="35dp"
+                    android:onClick="onNumberClick"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
 
@@ -192,6 +210,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/button_addition"
+                    android:onClick="onOperationClick"
                     android:textSize="35dp"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
@@ -208,6 +227,7 @@
                     android:text="@string/button_0"
                     android:layout_weight="1"
                     android:textSize="35dp"
+                    android:onClick="onNumberClick"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
 
@@ -226,6 +246,7 @@
                     android:layout_weight="1"
                     android:text="@string/button_equal"
                     android:textSize="35dp"
+                    android:onClick="onEqualClick"
                     style="?android:attr/buttonBarButtonStyle">
                 </Button>
 
